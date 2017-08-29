@@ -1,0 +1,18 @@
+<p>
+  <strong>Subject:</strong>
+  <%= @ticket.subject.html_safe %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @ticket.from.html_safe %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @ticket.body.html_safe %>
+</p>
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'View all', tickets_path %> |
+<%= link_to 'Back', :back %>
